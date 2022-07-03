@@ -76,10 +76,15 @@ public class ContactPerson {
                 if (name.equals(contactDetails.get(i).firstName)) {
                     contactDetails.remove(i);
                 }
-                else System.out.println("There is no any person contact for "+name);
+                else {
+                    System.out.println("There is no any person contact for " + name);
+                }
             }
         }
-        else System.out.println("There is no any person address to delete");
+        else {
+            System.out.println("There is no any person address to delete");
+
+        }
         System.out.println("Record Delete Successfully.......");
     }
 }
